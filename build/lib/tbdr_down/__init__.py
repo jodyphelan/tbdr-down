@@ -1,13 +1,6 @@
-"""
-This is a flask app which serves as a 
-notice when the server is down
-"""
-
-__version__ = '0.3.0'
-
-
 import os
 from flask import Flask,url_for
+
 
 def create_app(test_config=None):
     # create and configure the app
