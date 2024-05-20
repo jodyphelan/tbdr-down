@@ -6,5 +6,6 @@ bp = Blueprint('home', __name__)
 
 @bp.route('/<path:path>',methods=('GET', 'POST'))
 def index(path):
+    print(path)
     return render_template('pages/index.html')
 
