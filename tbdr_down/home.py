@@ -4,7 +4,7 @@ from flask import (
 bp = Blueprint('home', __name__)
 
 
-@bp.route('/',methods=('GET', 'POST'))
-def index():
+@bp.route('/<path:path>',methods=('GET', 'POST'))
+def index(path):
     return render_template('pages/index.html')
 
